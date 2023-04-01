@@ -11,13 +11,17 @@ const projectSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true,
- },
+  },
   domain: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Domain',
     required: true,
   },
-});
+},
+  {
+    timestamps: true,
+  }
+);
 
 const Project = mongoose.model('Project', projectSchema);
 

@@ -15,7 +15,9 @@ const domainSchema = new mongoose.Schema({
     enum: ['Private', 'Public', 'Personal'],
     default: 'Private',
   },
-});
+},
+  { timestamps: true },
+);
 
 const Domain = mongoose.model('Domain', domainSchema);
 

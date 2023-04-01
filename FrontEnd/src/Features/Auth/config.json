@@ -1,0 +1,4 @@
+{
+  "secureStorage": "app",
+  "encryptionKey": "myEncryptionKey"
+}
